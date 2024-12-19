@@ -9,6 +9,10 @@ declare module "@remix-run/node" {
 }
 
 export default defineConfig({
+  server: {
+    host: "0.0.0.0", // Lắng nghe tất cả các địa chỉ IP
+    port: 5173, // Cổng mà bạn muốn sử dụng
+  },
   plugins: [
     remix({
       future: {
